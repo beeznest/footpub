@@ -1,43 +1,32 @@
-<!DOCTYPE html>
-<!--
-    Copyright (c) 2012-2014 Adobe Systems Incorporated. All rights reserved.
-
-    Licensed to the Apache Software Foundation (ASF) under one
-    or more contributor license agreements.  See the NOTICE file
-    distributed with this work for additional information
-    regarding copyright ownership.  The ASF licenses this file
-    to you under the Apache License, Version 2.0 (the
-    "License"); you may not use this file except in compliance
-    with the License.  You may obtain a copy of the License at
-
-    http://www.apache.org/licenses/LICENSE-2.0
-
-    Unless required by applicable law or agreed to in writing,
-    software distributed under the License is distributed on an
-    "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
-     KIND, either express or implied.  See the License for the
-    specific language governing permissions and limitations
-    under the License.
--->
+<!DOCTYPE html> 
 <html>
     <head>
-        <meta charset="utf-8" />
-        <meta name="format-detection" content="telephone=no" />
-        <meta name="msapplication-tap-highlight" content="no" />
-        <!-- WARNING: for iOS 7, remove the width=device-width and height=device-height attributes. See https://issues.apache.org/jira/browse/CB-4323 -->
-        <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width, height=device-height, target-densitydpi=device-dpi" />
-        <link rel="stylesheet" type="text/css" href="css/bootstrap.css" />
-        <title>Hello World</title>
+        <meta charset="utf-8">
+        <title>FootPub | BeezNest</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="jqm/jquery.mobile-1.4.4.min.css" />
+        <link rel="stylesheet" href="jqm/jquery.mobile.structure-1.4.4.min.css" />
+        <link rel="stylesheet" href="jqm/jquery.mobile.theme-1.4.4.min.css" />
+        <script src="jqm/jquery-2.1.1.min.js"></script>
+        <script src="jqm/jquery.mobile-1.4.4.min.js"></script>
     </head>
+
     <body>
-        <div class="app">
-            <!-- Indicates a successful or positive action -->
-            <button type="button" class="btn btn-success" id="bu">Reproducir Sonido</button>
+        <div data-role="page">
+            <div data-role="header">
+                <h1>FootPub</h1>
+            </div>
+            <div role="main" class="ui-content">
+                <a href="#" id="btn-bu" class="ui-btn ui-icon-star ui-btn-icon-top">Bu</a>
+                <a href="#" id="btn-Oe" class="ui-btn ui-icon-star ui-btn-icon-top">Oe</a>
+                <a href="#" id="btn-goal" class="ui-btn ui-icon-star ui-btn-icon-top">Goal</a>
+                <a href="#" id="btn-uy" class="ui-btn ui-icon-star ui-btn-icon-top">Uy</a>
+                <a href="#" id="btn-wo" class="ui-btn ui-icon-star ui-btn-icon-top">Wo</a>
+                <a href="#" id="btn-wu" class="ui-btn ui-icon-star ui-btn-icon-top">Wu</a>
+            </div>
+            <div data-role="footer">
+                <h4>BeezNest</h4>
+            </div>
         </div>
-        <script type="text/javascript" src="cordova.js"></script>
-        <script type="text/javascript" src="js/index.js"></script>
-        <script type="text/javascript">
-            app.initialize();
-        </script>
     </body>
 </html>
