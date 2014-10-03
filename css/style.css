@@ -1,0 +1,98 @@
+.titulo{
+	color: #fff;
+	padding-top: .5em;
+	padding-bottom: .5em;
+	padding-left: 1em;
+	padding-right: 1em;
+	background-color: #EC5923;
+}
+.container{
+	padding-top: 10px;
+}
+.ref{
+	font-style: italic;
+	font-size: 14px;
+	font-weight: bold;
+}
+.thumbnail{
+	background: none;
+	border: none;
+}
+.jumbotron{
+	margin-bottom: 15px;
+	background: #fff;
+}
+.footer{
+	background: #333;
+	padding:0px;
+	color: #fff;
+	font-size: 12px;
+}
+.footer p{
+	padding: 0px;
+	margin-bottom: 0px;
+}
+.footer .dato{
+	padding: 10px;
+}
+.footer .logo-beeznest{
+	padding-left: 0px;
+	background-color: #fff;
+}
+.footer .blanco{
+	background-color: #fff;
+}
+.footer .piecito{
+	font-size: 14px;
+	padding-bottom: 5px;
+}
+.jumbotron p{
+	font-size: 16px;
+}
+.center{
+	text-align: center;
+}
+.panel-color{
+	background-color: #fff;
+	border: 1px solid #ff7d32;
+	margin-bottom: 20px;
+}
+.header-table{
+	background: #ff7d32; /* Old browsers */
+	background: -moz-linear-gradient(top, #ff7d32 0%, #ff670f 100%); /* FF3.6+ */
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#ff7d32), color-stop(100%,#ff670f)); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(top, #ff7d32 0%,#ff670f 100%); /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(top, #ff7d32 0%,#ff670f 100%); /* Opera 11.10+ */
+	background: -ms-linear-gradient(top, #ff7d32 0%,#ff670f 100%); /* IE10+ */
+	background: linear-gradient(to bottom, #ff7d32 0%,#ff670f 100%); /* W3C */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ff7d32', endColorstr='#ff670f',GradientType=0 ); /* IE6-9 */
+	color:#fff;
+}
+.azul{
+	color: #2E8FFF;
+	font-weight: bold;
+}
+.verde{
+	color:#5BC543;
+	font-weight: bold;
+}
+.rojo{
+	color:#F73838 ;
+	font-weight: bold;
+}
+.naranja{
+	color:#F79D36 ;
+	font-weight: bold;
+}
+.embed-responsive{
+	margin-bottom: 20px;
+}
+@media (min-width: 321px) and (max-width: 1024px){
+	.footer .logo-beeznest{
+		text-align: center;
+		margin-bottom: 10px; 
+	}
+	.footer {
+		text-align: center;
+	}
+}
