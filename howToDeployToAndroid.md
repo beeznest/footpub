@@ -1,15 +1,15 @@
 HOW TO DEPLOY TO ANDROID?
 
 1. Install JAVA
-´´´bash
+```bash
 sudo apt-get install openjdk-7-jdk
-´´´
+```
 2. Install Ant
-´´´bash
+```bash
 sudo apt-get install ant
-´´´
+```
 2. Install ANDROID SDK MANAGER
-´´´bash
+```bash
 cd /path/to/install/android
 wget http://dl.google.com/android/android-sdk_r23.0.2-linux.tgz
 tar xvzf android-sdk_r23.0.2-linux.tgz
@@ -33,5 +33,5 @@ cordova run android
 # If using phonegap cli
 phonegap local build android
 phonegap local build android
-´´´
+```
 Get fun :)
