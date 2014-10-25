@@ -3,12 +3,15 @@
     <head>
         <meta charset="utf-8">
         <title>FootPub | BeezNest</title>
-        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, target-densitydpi=device-dpi, user-scalable=no">
+        <meta name="format-detection" content="telephone=no" />
+        <meta name="msapplication-tap-highlight" content="no" />
         <link rel="stylesheet" href="jqm/jquery.mobile-1.4.4.min.css" />
         <link rel="stylesheet" href="jqm/jquery.mobile.structure-1.4.4.min.css" />
         <link rel="stylesheet" href="jqm/jquery.mobile.theme-1.4.4.min.css" />
         <script src="jqm/jquery-2.1.1.min.js"></script>
         <script src="jqm/jquery.mobile-1.4.4.min.js"></script>
+        <!-- WARNING: for iOS 7, remove the width=device-width and height=device-height attributes. See https://issues.apache.org/jira/browse/CB-4323 -->
     </head>
 
     <body>
@@ -17,16 +20,21 @@
                 <h1>FootPub</h1>
             </div>
             <div role="main" class="ui-content">
-                <a href="#" id="btn-bu" class="ui-btn ui-icon-star ui-btn-icon-top">Buuuuu</a>
-                <a href="#" id="btn-Oe" class="ui-btn ui-icon-star ui-btn-icon-top">Oeee-oe-oe-oeee</a>
-                <a href="#" id="btn-goal" class="ui-btn ui-icon-star ui-btn-icon-top">Goooooooaaaaal!!!</a>
-                <a href="#" id="btn-uy" class="ui-btn ui-icon-star ui-btn-icon-top">Uuuyyyyyy!!</a>
-                <a href="#" id="btn-wo" class="ui-btn ui-icon-star ui-btn-icon-top">WOOoooooo...</a>
-                <a href="#" id="btn-wu" class="ui-btn ui-icon-star ui-btn-icon-top">Wuuuuuuu!!</a>
+                <div id="btn-bu" class="ui-btn ui-icon-star ui-btn-icon-top" ontouchstart="app.play('bu');">Buuuuu</div>
+                <div id="btn-Oe" class="ui-btn ui-icon-star ui-btn-icon-top" ontouchstart="app.play('oe');">Oeee-oe-oe-oeee</div>
+                <div id="btn-goal" class="ui-btn ui-icon-star ui-btn-icon-top" ontouchstart="app.play('goal');">Goooooooaaaaal!!!</div>
+                <div id="btn-uy" class="ui-btn ui-icon-star ui-btn-icon-top" ontouchstart="app.play('uy');">Uuuyyyyyy!!</div>
+                <div id="btn-wo" class="ui-btn ui-icon-star ui-btn-icon-top" ontouchstart="app.play('wo');">WOOoooooo...</div>
+                <div id="btn-wu" class="ui-btn ui-icon-star ui-btn-icon-top" ontouchstart="app.play('wu');">Wuuuuuuu!!</div>
             </div>
             <div data-role="footer">
                 <h4>BeezNest</h4>
             </div>
         </div>
+        <script type="text/javascript" src="cordova.js"></script>
+        <script type="text/javascript" src="js/index.js"></script>
+        <script type="text/javascript">
+            app.initialize();
+        </script>
     </body>
 </html>

@@ -37,13 +37,28 @@ var app = {
     },
     // Update DOM on a Received Event
     receivedEvent: function(id) {
+        /*
         var parentElement = document.getElementById(id);
         var listeningElement = parentElement.querySelector('.listening');
         var receivedElement = parentElement.querySelector('.received');
 
         listeningElement.setAttribute('style', 'display:none;');
         receivedElement.setAttribute('style', 'display:block;');
-
+        */
         console.log('Received Event: ' + id);
+
+        if(window.plugins && window.plugins.LowLatencyAudio) {
+
+            var notes = ['bu', 'goal', 'oe', 'uy', 'wo', 'wu'];
+
+            for (var i = 0; i < notes.length;  i++) {
+                window.plugins.LowLatencyAudio.preloadAudio(notes[i], 'audio/' + notes[i] + '.ogg');
+            }
+        }
+
+    },
+
+    play: function(note) {
+        window.plugins.LowLatencyAudio.play(note);
     }
 };
